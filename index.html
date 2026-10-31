@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc &amp; Bérénice — 10 juillet 2027</title>
+  <meta name="description" content="Marc & Bérénice se marient le 10 juillet 2027 au Domaine Le Mezo, Golfe du Morbihan." />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">M&nbsp;&amp;&nbsp;B</a>
+      <nav class="nav__links">
+        <a href="#lieu" data-i18n="nav.place">Lieu &amp; date</a>
+        <a href="#programme" data-i18n="nav.programme">Programme</a>
+        <a href="#dormir" data-i18n="nav.stay">Où dormir</a>
+        <a href="#venir" data-i18n="nav.venue">Venir</a>
+        <a href="#visiter" data-i18n="nav.visit">À visiter</a>
+        <a href="#cadeaux" data-i18n="nav.gifts">Cadeaux</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="nav__right">
+        <button class="lang" id="langToggle" aria-label="Switch language">EN</button>
+        <a href="#rsvp" class="btn btn--small" data-i18n="nav.rsvp">RSVP</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Nous nous marions</p>
+      <h1 class="hero__names">Marc <span class="amp">&amp;</span> Bérénice</h1>
+      <p class="hero__date"><span data-i18n="hero.date">10 juillet 2027</span> · <span data-i18n="hero.place">Domaine Le Mezo, Golfe du Morbihan</span></p>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="countdown__unit"><span class="countdown__num" id="cd-days">—</span><span class="countdown__label" data-i18n="countdown.days">jours</span></div>
+        <div class="countdown__unit"><span class="countdown__num" id="cd-hours">—</span><span class="countdown__label" data-i18n="countdown.hours">heures</span></div>
+        <div class="countdown__unit"><span class="countdown__num" id="cd-mins">—</span><span class="countdown__label" data-i18n="countdown.mins">minutes</span></div>
+        <div class="countdown__unit"><span class="countdown__num" id="cd-secs">—</span><span class="countdown__label" data-i18n="countdown.secs">secondes</span></div>
+      </div>
+
+      <a href="#rsvp" class="btn" data-i18n="hero.cta">Répondre à l'invitation</a>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="section section--accent" id="rsvp">
+    <div class="wrap wrap--narrow center">
+      <h2 data-i18n="rsvp.title">Serez-vous là ?</h2>
+      <p class="lead" data-i18n="rsvp.lead">Merci de nous confirmer votre présence avant le [date limite à confirmer].</p>
+      <p class="lead" data-i18n="rsvp.lead2">Le formulaire nous permet de vous compter pour chaque moment : cérémonie, cocktail, dîner &amp; soirée, brunch.</p>
+      <a class="btn" href="https://google.fr" target="_blank" rel="noopener" data-i18n="rsvp.cta">Remplir le formulaire</a>
+      <p class="hint" data-i18n="rsvp.hint">Vous pourrez modifier votre réponse plus tard avec le lien reçu par email.</p>
+    </div>
+  </section>
+
+  <!-- ============ LIEU & DATE ============ -->
+  <section class="section" id="lieu">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__text">
+          <h2 data-i18n="place.title">Lieu &amp; date</h2>
+          <p class="lead" data-i18n="place.intro">Le 10 juillet 2027, nous vous donnons rendez-vous au Domaine Le Mezo, au cœur du Parc Naturel Régional du Golfe du Morbihan.</p>
+
+          <dl class="facts">
+            <div><dt data-i18n="place.dateLabel">Date</dt><dd data-i18n="place.date">Samedi 10 juillet 2027</dd></div>
+            <div><dt data-i18n="place.venueLabel">Lieu</dt><dd data-i18n="place.venue">Domaine Le Mezo, Golfe du Morbihan, Bretagne Sud</dd></div>
+            <div><dt data-i18n="place.addressLabel">Adresse</dt><dd data-i18n="place.address">[Adresse exacte à confirmer] — à 10 min de Vannes</dd></div>
+            <div><dt data-i18n="place.timeLabel">Arrivée</dt><dd data-i18n="place.time">À partir de 15h00</dd></div>
+            <div><dt data-i18n="place.departLabel">Retour</dt><dd data-i18n="place.depart">Départ le lendemain avant 12h00</dd></div>
+          </dl>
+          <p class="hint" data-i18n="place.hint">Les horaires définitifs vous seront confirmés plus tard.</p>
+        </div>
+        <div class="split__media">
+          <div class="media-placeholder" aria-hidden="true">
+            <span data-i18n="common.photo">[Photo du domaine]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMME ============ -->
+  <section class="section section--tint" id="programme">
+    <div class="wrap wrap--narrow">
+      <h2 class="center" data-i18n="programme.title">Le programme</h2>
+      <p class="center lead" data-i18n="programme.intro">Les grandes lignes du week-end. Les horaires sont encore provisoires.</p>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__time">[XXh00]</span>
+          <span class="timeline__what" data-i18n="programme.s1">Cérémonie</span>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__time">[XXh00]</span>
+          <span class="timeline__what" data-i18n="programme.s2">Cocktail</span>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__time">[XXh00]</span>
+          <span class="timeline__what" data-i18n="programme.s3">Dîner &amp; soirée</span>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__time">[XXh00]</span>
+          <span class="timeline__what" data-i18n="programme.s4">Brunch (le lendemain)</span>
+        </li>
+      </ol>
+      <div class="callout">
+        <h3 data-i18n="dress.title">Dress code</h3>
+        <p data-i18n="dress.body">Pour le brunch du lendemain : <strong>tenue blanche</strong>. Pour le reste, élégant et confortable — et pensez à un maillot et de la crème solaire selon la météo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DORMIR ============ -->
+  <section class="section" id="dormir">
+    <div class="wrap">
+      <h2 data-i18n="stay.title">Où dormir</h2>
+      <p class="lead" data-i18n="stay.intro">Tout l'hébergement se trouve sur place, au Domaine Le Mezo — du château aux yourtes. Les réservations et la répartition sont gérées par les mariés.</p>
+
+      <div class="cards">
+        <article class="card"><h3 data-i18n="stay.castle">Le Château</h3><p data-i18n="stay.castleDesc">2 suites et 4 chambres, jusqu'à 14 personnes.</p></article>
+        <article class="card"><h3 data-i18n="stay.farms">Les Farm Houses</h3><p data-i18n="stay.farmsDesc">7 maisons de 2 à 6 chambres, environ 84 personnes.</p></article>
+        <article class="card"><h3 data-i18n="stay.lofts">Les Lofts</h3><p data-i18n="stay.loftsDesc">3 lofts, environ 38 personnes.</p></article>
+        <article class="card"><h3 data-i18n="stay.yurts">Les Yourtes</h3><p data-i18n="stay.yurtsDesc">10 yourtes de 4 personnes, 40 personnes.</p></article>
+      </div>
+
+      <p class="note" data-i18n="stay.note">Important : merci de ne pas contacter directement le domaine pour la réservation. Toutes les demandes passent par le formulaire ci-dessous, et nous nous chargeons nous-mêmes de la répartition des hébergements.</p>
+      <a class="btn" href="https://google.fr" target="_blank" rel="noopener" data-i18n="stay.cta">Réserver un hébergement</a>
+      <p class="hint" data-i18n="stay.hint">L'ouverture des réservations pour la veille du mariage se fait 90 jours avant l'événement.</p>
+    </div>
+  </section>
+
+  <!-- ============ VENIR ============ -->
+  <section class="section section--tint" id="venir">
+    <div class="wrap wrap--narrow">
+      <h2 class="center" data-i18n="venue.title">Comment venir</h2>
+      <p class="center lead" data-i18n="venue.intro">Le domaine se situe à environ 10 minutes de Vannes, en Bretagne Sud. Il n'y a pas de navette prévue.</p>
+
+      <div class="access">
+        <div class="access__row">
+          <h3 data-i18n="venue.train">En train</h3>
+          <p data-i18n="venue.trainBody">Depuis Paris, TGV jusqu'à la gare de Vannes (environ 2h45). Comptez ensuite 15 minutes de route jusqu'au domaine. Pour les invités arrivant en train, le domaine peut vous accueillir sur place — précisez-le dans votre réponse.</p>
+        </div>
+        <div class="access__row">
+          <h3 data-i18n="venue.car">En voiture</h3>
+          <p data-i18n="venue.carBody">De Paris, comptez environ 4h30 à 5h par l'autoroute. Un parking est disponible sur place.</p>
+        </div>
+        <div class="access__row">
+          <h3 data-i18n="venue.air">En avion</h3>
+          <p data-i18n="venue.airBody">Aéroport de Nantes-Atlantique, puis 1h15 de route. Aéroport de Rennes, puis 1h30 de route.</p>
+        </div>
+        <div class="access__row">
+          <h3 data-i18n="venue.map">Carte</h3>
+          <p><a href="https://www.google.com/maps/search/Domaine+Le+Mezo+Golfe+du+Morbihan" target="_blank" rel="noopener" data-i18n="venue.mapLink">Ouvrir dans Google Maps →</a></p>
+        </div>
+      </div>
+      <p class="hint" data-i18n="venue.hint">Ces informations sont provisoires et seront précisées plus tard.</p>
+    </div>
+  </section>
+
+  <!-- ============ VISITER ============ -->
+  <section class="section" id="visiter">
+    <div class="wrap">
+      <h2 data-i18n="visit.title">À visiter dans les environs</h2>
+      <p class="lead" data-i18n="visit.intro">Vous venez de loin ? Voici quelques idées pour profiter du Morbihan autour du mariage.</p>
+      <div class="cards cards--visit" id="visitCards">
+        <!-- populated / fallback in HTML for no-JS -->
+        <article class="card">
+          <h3>Vannes</h3>
+          <p data-i18n="visit.vannes">Cité médiévale pleine de charme : remparts, port, ruelles pavées et marché. À 10 minutes du domaine.</p>
+        </article>
+        <article class="card">
+          <h3>Golfe du Morbihan</h3>
+          <p data-i18n="visit.golfe">Iles et îlots par dizaines, balades en bateau au départ de Vannes. Un paysage unique.</p>
+        </article>
+        <article class="card">
+          <h3>Séné &amp; La Trinité-sur-Mer</h3>
+          <p data-i18n="visit.sene">Bourgs de pêcheurs typiques, avec leurs alignements de menhirs à Carnac à proximité.</p>
+        </article>
+        <article class="card">
+          <h3>Baie de Quiberon</h3>
+          <p data-i18n="visit.quiberon">Côte sauvage et plages, à environ 45 minutes. Idéal pour une journée.</p>
+        </article>
+        <article class="card">
+          <h3>Rochefort-en-Terre</h3>
+          <p data-i18n="visit.rochefort">Classé « Plus Beau Village de France », à 40 minutes. Ruelles fleuries et ateliers d'artisans.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAN / JEU ============ -->
+  <section class="section section--tint" id="plan">
+    <div class="wrap wrap--narrow center">
+      <h2 data-i18n="quiz.title">Le petit jeu</h2>
+      <p class="lead" data-i18n="quiz.intro">Un plan du domaine, et un défi : retrouvez les lieux cachés du week-end. Détails à venir.</p>
+      <div class="media-placeholder media-placeholder--wide" aria-hidden="true"><span data-i18n="quiz.placeholder">[Plan du château — à remplacer]</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CADEAUX ============ -->
+  <section class="section" id="cadeaux">
+    <div class="wrap wrap--narrow">
+      <h2 class="center" data-i18n="gifts.title">Liste de cadeaux</h2>
+      <p class="lead center" data-i18n="gifts.intro">Votre présence est le plus beau des cadeaux. Si vous souhaitez tout de même participer, voici deux options.</p>
+
+      <div class="gift">
+        <h3 data-i18n="gifts.ibanTitle">Par virement</h3>
+        <p class="iban" id="iban">[IBAN à confirmer]</p>
+        <button class="btn btn--ghost btn--small" id="copyIban" data-i18n="gifts.copy">Copier l'IBAN</button>
+      </div>
+
+      <div class="gift">
+        <h3 data-i18n="gifts.cagnotteTitle">Sur place</h3>
+        <p data-i18n="gifts.cagnotteBody">Une urne sera disponible au domaine le jour du mariage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--tint" id="faq">
+    <div class="wrap wrap--narrow">
+      <h2 class="center" data-i18n="faq.title">Questions fréquentes</h2>
+
+      <div class="faq">
+        <details>
+          <summary data-i18n="faq.q1">Puis-je venir avec un accompagnant ?</summary>
+          <p data-i18n="faq.a1">Les invitations sont nominatives et les places sont limitées. Écrivez-nous si vous avez un doute, nous en parlerons.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q2">Les enfants sont-ils invités ?</summary>
+          <p data-i18n="faq.a2">Oui, les enfants sont les bienvenus. Merci de nous le préciser dans votre réponse pour que nous puissions tout prévoir.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q3">Allergies et régimes alimentaires ?</summary>
+          <p data-i18n="faq.a3">Indiquez-les dans le formulaire de réponse, le domaine s'adapte.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q4">Y a-t-il une navette ?</summary>
+          <p data-i18n="faq.a4">Non, il n'y a pas de navette. Le mieux est de vous organiser en covoiturage ; l'hébergement sur place simplifie les choses.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q5">Faut-il réserver un hôtel ?</summary>
+          <p data-i18n="faq.a5">Non. Tout l'hébergement est sur place, au domaine. Voir la section « Où dormir ».</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q6">Puis-je proposer une chanson ?</summary>
+          <p data-i18n="faq.a6">Oui, avec plaisir ! Indiquez-la dans le formulaire de réponse.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q7">Que faut-il apporter ?</summary>
+          <p data-i18n="faq.a7">Un maillot de bain, de la crème solaire, et une tenue blanche pour le brunch du lendemain.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q8">Comment être prévenu des mises à jour ?</summary>
+          <p data-i18n="faq.a8">Un groupe WhatsApp sera créé pour le week-end. Vous recevrez aussi un email de confirmation avec les détails à ajouter à votre agenda.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap center">
+      <p class="footer__names">Marc &amp; Bérénice</p>
+      <p class="footer__date" data-i18n="footer.date">10 juillet 2027 · Domaine Le Mezo</p>
+      <p class="footer__note" data-i18n="footer.note">Une question ? Écrivez-nous à l'adresse de contact à venir.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
