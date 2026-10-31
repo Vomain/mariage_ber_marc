@@ -53,6 +53,10 @@
       "place.departLabel": "Retour",
       "place.depart": "Départ le lendemain avant 12h00",
       "place.hint": "Les horaires définitifs vous seront confirmés plus tard.",
+      "place.caption": "Le château du Domaine Le Mezo.",
+      "programme.caption": "La salle de réception, où se tiendront le dîner et la soirée.",
+      "programme.sketchCaption": "L'aquarelle du faire-part.",
+      "visit.caption": "Le Golfe du Morbihan vu du ciel.",
 
       "programme.title": "Le programme",
       "programme.intro": "Les grandes lignes du week-end. Les horaires sont encore provisoires.",
@@ -172,6 +176,10 @@
       "place.departLabel": "Departure",
       "place.depart": "Departure the next day before 12:00 pm",
       "place.hint": "Final times will be confirmed later.",
+      "place.caption": "The château at Domaine Le Mezo.",
+      "programme.caption": "The reception barn, where dinner and the party will be held.",
+      "programme.sketchCaption": "The watercolour from the invitation.",
+      "visit.caption": "The Gulf of Morbihan from the air.",
 
       "programme.title": "The schedule",
       "programme.intro": "The outline of the weekend. Times are still provisional.",

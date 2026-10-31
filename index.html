@@ -82,9 +82,13 @@
           <p class="hint" data-i18n="place.hint">Les horaires définitifs vous seront confirmés plus tard.</p>
         </div>
         <div class="split__media">
-          <div class="media-placeholder" aria-hidden="true">
-            <span data-i18n="common.photo">[Photo du domaine]</span>
-          </div>
+          <figure class="figure">
+            <img src="img/chateau.jpg"
+                 srcset="img/chateau.webp" type="image/webp"
+                 alt="Le château du Domaine Le Mezo, pierre dorée et toit d'ardoise, au milieu du parc."
+                 loading="lazy" width="1600" height="1067" />
+            <figcaption data-i18n="place.caption">Le château du Domaine Le Mezo.</figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -113,10 +117,25 @@
           <span class="timeline__what" data-i18n="programme.s4">Brunch (le lendemain)</span>
         </li>
       </ol>
+      <figure class="figure" style="margin-top:2.6rem">
+        <img src="img/reception.jpg"
+             alt="La salle de réception : murs de pierre, charpente apparente et guirlandes lumineuses."
+             loading="lazy" width="1400" height="933" />
+        <figcaption data-i18n="programme.caption">La salle de réception, où se tiendront le dîner et la soirée.</figcaption>
+      </figure>
+
       <div class="callout">
         <h3 data-i18n="dress.title">Dress code</h3>
         <p data-i18n="dress.body">Pour le brunch du lendemain : <strong>tenue blanche</strong>. Pour le reste, élégant et confortable — et pensez à un maillot et de la crème solaire selon la météo.</p>
       </div>
+
+      <figure class="figure figure--sketch">
+        <img src="img/aquarelle.jpg"
+             srcset="img/aquarelle.webp" type="image/webp"
+             alt="Aquarelle du château et de la grande table dressée sous une tonnelle."
+             loading="lazy" width="1000" height="1453" />
+        <figcaption data-i18n="programme.sketchCaption">L'aquarelle du faire-part.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -131,6 +150,13 @@
         <article class="card"><h3 data-i18n="stay.farms">Les Farm Houses</h3><p data-i18n="stay.farmsDesc">7 maisons de 2 à 6 chambres, environ 84 personnes.</p></article>
         <article class="card"><h3 data-i18n="stay.lofts">Les Lofts</h3><p data-i18n="stay.loftsDesc">3 lofts, environ 38 personnes.</p></article>
         <article class="card"><h3 data-i18n="stay.yurts">Les Yourtes</h3><p data-i18n="stay.yurtsDesc">10 yourtes de 4 personnes, 40 personnes.</p></article>
+      </div>
+
+      <div class="strip">
+        <img src="img/chambre.jpg" alt="Une chambre du château." loading="lazy" width="1000" height="667" />
+        <img src="img/lofts.jpg" alt="Un des lofts du domaine." loading="lazy" width="1200" height="800" />
+        <img src="img/farmhouse.jpg" alt="Une des farm houses du domaine." loading="lazy" width="1200" height="800" />
+        <img src="img/piscine.jpg" alt="La piscine du domaine." loading="lazy" width="1200" height="800" />
       </div>
 
       <p class="note" data-i18n="stay.note">Important : merci de ne pas contacter directement le domaine pour la réservation. Toutes les demandes passent par le formulaire ci-dessous, et nous nous chargeons nous-mêmes de la répartition des hébergements.</p>
@@ -172,6 +198,13 @@
     <div class="wrap">
       <h2 data-i18n="visit.title">À visiter dans les environs</h2>
       <p class="lead" data-i18n="visit.intro">Vous venez de loin ? Voici quelques idées pour profiter du Morbihan autour du mariage.</p>
+
+      <figure class="figure" style="margin:2.2rem 0 0">
+        <img src="img/morbihan.jpg"
+             alt="Vue aérienne du Golfe du Morbihan, mouillages et îles boisées."
+             loading="lazy" width="1000" height="1129" />
+        <figcaption data-i18n="visit.caption">Le Golfe du Morbihan vu du ciel.</figcaption>
+      </figure>
       <div class="cards cards--visit" id="visitCards">
         <!-- populated / fallback in HTML for no-JS -->
         <article class="card">
